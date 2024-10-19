@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    color: #FFFFFF;
+}
+
+body {
+    background-color: #0B0B0C;
+    overflow-x: hidden;
+}
+
+section {
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+
+
+#home {
+   @media(max-width:780px){
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+}
+
+nav {
+    font-size: 1.8vw;
+    margin-top: 2%;
+}
+
+.hero-container {
+    flex-direction: row;
+    margin-top: 2%;
+    display: flex;
+    @media(max-width:780px){
+        width: 50%;
+        flex-direction: column;
+        justify-self: center;
+    }
+    
+
+}
+
+.hero-container div {
+    width: 50%;
+    @media(max-width:780px){
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+   
+}
+
+.hero-container div p {
+    margin: 0;
+    line-height: 100%;
+    font-family: 'Roboto';
+    font-size: 8vw;
+}
+
+.hero-container div p + * {
+    font-family: 'Roboto Serif';
+}
+
+.hero-container div p + * + * + * {
+    font-family: 'Roboto';
+}
+
+.hero-container div p + * + * + * + * {
+    font-family: 'Roboto Serif';
+}
+
+.hero-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media(max-width:780px){
+        width: 100%;
+    }
+}
+
+.hero-image-container img {
+    width: 50vw;
+    @media(max-width:780px){
+        margin-left:50%;
+    }
+}
