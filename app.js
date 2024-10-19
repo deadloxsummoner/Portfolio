@@ -1,5 +1,10 @@
-let work1 = document.getElementById('work1');
+let openNav = document.getElementById("openNav");
+let claseNav = document.getElementById("closeNav");
+let navBar = document.getElementById("navBar");
+function navOpen(){
+    navBar.style.left = "0";
+}
 
-work1.onclick = function(){
-    
+function navClose(){
+    navBar.style.left ="100%";
 }

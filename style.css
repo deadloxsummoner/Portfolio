@@ -457,3 +457,39 @@ nav {
     transition: .5s;
 }
 
+/* navbar */
+.nav-bar {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0B0B0C;
+    position:fixed;
+    z-index: 999;
+    left: 100%;
+    transition: 0.5s;
+}
+
+.close-container {
+    display: flex;
+    justify-content: end;
+    
+}
+
+.close {
+    cursor:pointer;
+    width: 5%;
+    margin-right: 5%;
+}
+
+.nav-butt {
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+}
+
+
+.nav-open {
+    width: 5%;
+    position: fixed;
+    margin-right: 5%;
+    cursor: pointer;
+}
