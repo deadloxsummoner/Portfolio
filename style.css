@@ -449,7 +449,7 @@ nav {
     padding: 15px 60px;
     border-radius: 50px;
     font-size: 30px;
-    
+    cursor: pointer;
 }
 
 .contact:hover {
@@ -553,4 +553,8 @@ nav {
 
 .nav-butts a:has(+*+*+*+*:hover){
     filter: brightness(0.1);
+}
+
+#footer {
+    height: 50vh;
 }
