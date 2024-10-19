@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stan Magallon | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="nav-bar" id="navBar">
+        <div class="close-container"><img src="close.png" class="close" id="closeNav" onclick="navClose()"></div>
+        <div class="nav-butts">
+            <a href="#home" onclick="navClose()">HOME</a>
+            <a href="#about" onclick="navClose()">ABOUT</a>
+            <a href="#works" onclick="navClose()">WORKS</a>
+            <a href="#overview" onclick="navClose()">OVERVIEW</a>
+            <a href="#contact" onclick="navClose()">CONTACTS</a>
+        </div>
+    </div>
+    <div class="nav-butt"><img src="menu.png" class="nav-open" id="openNav" onclick="navOpen()"></div>
+    <div class="contacts-container">
+        <div>
+            
+        </div>
+    </div>
     <section id="home">
         <div class="hero-container">
             <div>
@@ -39,13 +56,17 @@
     <section id="works">
         <div class="section-header">WORKS /</div>
         <div class="works-container">
-            <div class="works" id="work1">
-                <div class="works-title">
+            <div class="works" >
+                <div class="works-title"  onclick="workOneOpen()">
                     <p>AIMS</p>
                     <p>web app</p>
                     <p>01</p>
                 </div>
                 <div class="under-line"></div>
+                <div class="workClose" id="workOne">
+                    <div class="image-container"><img src="decoy.jpg" class="work-image"></div>
+                    <div> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor eum reiciendis nostrum neque maiores natus voluptas laudantium dolorem inventore magnam repudiandae sunt ducimus obcaecati sint autem, hic perferendis omnis soluta? Ipsa ullam, veniam officia rem velit eligendi voluptates aperiam, nisi nihil suscipit explicabo quos non voluptatem, minima numquam. Consectetur inventore ducimus ratione non impedit. Minima numquam quas recusandae perferendis velit?</div>
+                </div>
             </div>
             <div class="works">
                 <div class="works-title">
@@ -99,7 +120,19 @@
         </div>
         <br><br>
         <div class="contact-con">
-            <a href="#" class="contact">contact</a>
+            <a class="contact">contact</a>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="footer-container">
+            <p>STAN MAGALLON</p>
+            <p>2024</p> 
+            <p></p>
+        </div>
+        <div class="footer-container">
+            <a>GITHUB</a>
+            <a>INSTAGRAM</a>
+            <a>FACEBOOK</a>
         </div>
     </section>
 </body>
