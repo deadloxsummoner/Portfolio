@@ -147,7 +147,7 @@ nav {
 }
 
 #works {
-    height: 100vh;
+    height: auto;
 }
 
 .works {
@@ -186,3 +186,274 @@ nav {
 .under-line {
     border-bottom: white 0.2vh solid;
 }
+
+.overview-container {
+    margin-top: 5vh;
+}
+
+.overview-about {
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 200%;
+    font-size: 1.5vw;
+}
+
+.technologies-container {
+    margin-top: 15vh;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+
+@keyframes sliderLeft {
+    to {
+        right: -500px;
+    }
+}
+
+.prog-container {
+    margin-top: 10vh;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #8E8E8E;
+    font-family: 'Roboto';
+    width: 100%;
+    position: sticky;
+}
+
+.prog-container div{
+    width: 30%;
+}
+
+
+.prog-1 {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 100px;
+    right: 100%;
+    animation: sliderLeft 30s linear infinite;
+    animation-delay: calc(30s / 6 * (6 - 1) * -1);
+}
+
+.prog-2 {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 100px;
+    right: 100%;
+    animation: sliderLeft 30s linear infinite;
+    animation-delay: calc(30s / 6 * (6 - 2) * -1);
+}
+
+.prog-3 {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 100px;
+    right: 100%;
+    animation: sliderLeft 30s linear infinite;
+    animation-delay: calc(30s / 6 * (6 - 3) * -1);
+}
+
+.prog-4 {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 100px;
+    right: 100%;
+    animation: sliderLeft 30s linear infinite;
+    animation-delay: calc(30s / 6 * (6 - 4) * -1);
+}
+
+.prog-5 {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 100px;
+    right: 100%;
+    animation: sliderLeft 30s linear infinite;
+    animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+
+.prog-6 {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 100px;
+    right: 100%;
+    animation: sliderLeft 30s linear infinite;
+    animation-delay: calc(30s / 6 * (6 - 6) * -1);
+}
+
+.prog-container div img {
+    width: 40%;
+}
+
+#contact {
+    margin-top: 30vh;
+    @media (max-width:780px) {
+        margin-top: 5vh;
+    }
+}
+
+.contact-head {
+    position: sticky;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: white;
+    font-family: 'Roboto';
+}
+
+@keyframes sliderRight {
+    to {
+        left: -500px;
+    }
+}
+
+.contact-head div {
+    width: 40%;
+}
+
+.word-1 {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 6vw;
+    left: 100%;
+    animation: sliderRight 30s linear infinite;
+    animation-delay: calc(30s / 4 * (4 - 1) * -1);
+}
+
+.word-2 {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 6vw;
+    left: 100%;
+    animation: sliderRight 30s linear infinite;
+    animation-delay: calc(30s / 4 * (4 - 2) * -1);
+}
+
+.word-3 {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 6vw;
+    left: 100%;
+    animation: sliderRight 30s linear infinite;
+    animation-delay: calc(30s / 4 * (4 - 3) * -1);
+}
+
+.word-4 {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 6vw;
+    left: 100%;
+    animation: sliderRight 30s linear infinite;
+    animation-delay: calc(30s / 4 * (4 - 4) * -1);
+}
+
+.contact-head-2 {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #8E8E8E;
+    font-family: 'Roboto';
+    width: 100%;
+    position: sticky;
+}
+
+@keyframes sliderLeft {
+    to {
+        right: -500px;
+    }
+}
+
+.contact-head-2 div {
+    width: 30%;
+    text-wrap: nowrap;
+
+}
+
+.word-5 {
+    margin-left: 50%;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 6vw;
+    right: 100%;
+    animation: sliderLeft 30s linear infinite;
+    animation-delay: calc(30s / 4 * (4 - 1) * -1);
+}
+
+.word-6 {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 6vw;
+    right: 100%;
+    animation: sliderLeft 30s linear infinite;
+    animation-delay: calc(30s / 4 * (4 - 2) * -1);
+}
+
+.word-7 {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 6vw;
+    right: 100%;
+    animation: sliderLeft 30s linear infinite;
+    animation-delay: calc(30s / 4 * (4 - 3) * -1);
+}
+
+.word-8 {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 6vw;
+    right: 100%;
+    animation: sliderLeft 30s linear infinite;
+    animation-delay: calc(30s / 4 * (4 - 4) * -1);
+}
+
+.contact-con {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact {
+    border: 1px solid white;
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: white;
+    padding: 15px 60px;
+    border-radius: 50px;
+    font-size: 30px;
+    
+}
+
+.contact:hover {
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
