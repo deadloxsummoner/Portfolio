@@ -605,6 +605,10 @@ nav {
     margin-top: 15vh;
     height: 20vh;
     display: flex;
+    @media (max-width:780px) {
+       flex-direction: column; 
+       align-items: center;
+    }
 }
 
 .footer-container {
@@ -615,3 +619,12 @@ nav {
     width: 50%;
 }
 
+.contacts-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0b0b0cde;
+    position: fixed;
+    z-index: 999;
+  
+
+}
