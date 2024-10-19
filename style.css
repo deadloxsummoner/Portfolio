@@ -149,6 +149,7 @@ nav {
 
 #works {
     height: auto;
+    
 }
 
 .works {
@@ -164,6 +165,50 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    cursor: pointer;
+}
+
+#workOne {
+    transition: ease .5s;
+} 
+
+.workClose {
+    margin-top: 2%;
+    max-height: 0;
+    overflow: hidden;
+    transition: ease .5s;
+}
+
+.work-info-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    transition: ease .5s;
+    
+}
+
+.work-info-open {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+}
+
+.work-info-container div {
+    width: 50%;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.work-image {
+    width: 100%;
+    aspect-ratio: 16/10 ;
+    background-color:#8E8E8E;
 }
 
 .works-title p {
@@ -400,6 +445,7 @@ nav {
     right: 100%;
     animation: sliderLeft 30s linear infinite;
     animation-delay: calc(30s / 4 * (4 - 1) * -1);
+    
 }
 
 .word-6 {
@@ -556,5 +602,16 @@ nav {
 }
 
 #footer {
-    height: 50vh;
+    margin-top: 15vh;
+    height: 20vh;
+    display: flex;
 }
+
+.footer-container {
+    font-family: 'Roboto Condensed';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+
