@@ -539,6 +539,7 @@ nav {
     position: fixed;
     margin-right: 5%;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .nav-butts {
@@ -625,6 +626,68 @@ nav {
     background-color: #0b0b0cde;
     position: fixed;
     z-index: 999;
-  
+    transition: 0.3s;
+    right: 100%;
+    color: white;
+}
 
+.contact-about {
+    width: 40%;
+    height: 100vh;
+    background-color: #0B0B0C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    position: absolute;
+}
+
+.profile-picture {
+    width: 30%;
+    border-radius: 100%;
+}
+
+.profile-title {
+    font-size: 3vw;
+}
+
+.contact-name {
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.contact-icon-container {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+
+.contact-icon {
+    width: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.status-log {
+    margin-top: 15%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-between;
+}
+
+.status-cell{
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    text-align: left;
+}
+
+.status-image {
+    width: 12%;
+    padding-right: 5%;
 }

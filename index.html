@@ -19,9 +19,35 @@
         </div>
     </div>
     <div class="nav-butt"><img src="menu.png" class="nav-open" id="openNav" onclick="navOpen()"></div>
-    <div class="contacts-container">
-        <div>
-            
+    <div class="contacts-container" id="contactCon" >
+        <div class="close-container"><img src="close.png" class="close" id="closeNav" onclick="contactClose()"></div>
+        <div class="contact-about">
+            <br>
+            <p class="profile-title">Profile</p>
+            <br>
+            <img src="profile-icon.jpg" class="profile-picture">
+            <br>
+            <p class="contact-name">Kris Constantine F. Magallon</p>
+            <br>
+            <div class="contact-icon-container">
+                <a href="https://github.com/deadloxsummoner" target="_blank"><img src="github-icon.png" class="contact-icon"></a>
+                <a href="https://www.instagram.com/phisbol/" target="_blank"><img src="instagram-icon.png" class="contact-icon"></a>
+                <a href="https://www.facebook.com/magallonconstantine/" target="_blank"><img src="facebook-icon.png" class="contact-icon"></a>
+            </div>
+            <div class="status-log">
+                <div class="status-cell">
+                    <img src="graduate-icon.png" class="status-image">
+                    Polytechnic University Of the Philippines, Sta. Mesa
+                </div>
+                <div class="status-cell">
+                    <img src="home-icon.png" class="status-image">
+                    Taguig City, Metro Manila, Philippines
+                </div>
+                <div class="status-cell">
+                    <img src="mail.png" class="status-image">
+                    magallon.constantine@gmail.com
+                </div>
+            </div>
         </div>
     </div>
     <section id="home">
@@ -120,7 +146,7 @@
         </div>
         <br><br>
         <div class="contact-con">
-            <a class="contact">contact</a>
+            <a class="contact" id="contactButton" onclick="openContact()">contact</a>
         </div>
     </section>
     <section id="footer">
@@ -137,3 +163,4 @@
     </section>
 </body>
 </html>
+d
