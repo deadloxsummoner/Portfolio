@@ -166,6 +166,7 @@ nav {
     justify-content: space-between;
     align-items: baseline;
     cursor: pointer;
+    user-select: none;
 }
 
 #workOne {
