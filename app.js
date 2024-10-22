@@ -5,7 +5,8 @@ let workOne = document.getElementById("workOne");
 let workTwo = document.getElementById("workTwo");
 let workThree = document.getElementById("workThree");
 let contact = document.getElementById("contactCon");
-
+let contactMore = document.getElementById("contactMore");
+let moreContainer = document.getElementById("moreContainer");
 
 function navOpen(){
     navBar.style.left = "0";
@@ -38,4 +39,11 @@ function workTwoOpen(){
 function workThreeOpen(){
     workThree.classList.toggle("workClose");
     workThree.classList.toggle("work-info-container");
+}
+
+function moreContact(){
+    contactMore.classList.toggle("more-caret-close");
+    contactMore.classList.toggle("more-caret-open");
+    moreContainer.classList.toggle("more-container-close");
+    moreContainer.classList.toggle("more-container-open");
 }

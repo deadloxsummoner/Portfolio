@@ -1,173 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stan Magallon | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="icon.png">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="nav-bar" id="navBar">
-        <div class="close-container"><img src="close.png" class="close" id="closeNav" onclick="navClose()"></div>
-        <div class="nav-butts">
-            <a href="#home" onclick="navClose()">HOME</a>
-            <a href="#about" onclick="navClose()">ABOUT</a>
-            <a href="#works" onclick="navClose()">WORKS</a>
-            <a href="#overview" onclick="navClose()">OVERVIEW</a>
-            <a href="#contact" onclick="navClose()">CONTACTS</a>
-        </div>
+      <div class="close-container">
+        <img src="close.png" class="close" id="closeNav" onclick="navClose()" />
+      </div>
+      <div class="nav-butts">
+        <a href="#home" onclick="navClose()">HOME</a>
+        <a href="#about" onclick="navClose()">ABOUT</a>
+        <a href="#works" onclick="navClose()">WORKS</a>
+        <a href="#overview" onclick="navClose()">OVERVIEW</a>
+        <a href="#contact" onclick="navClose()">CONTACTS</a>
+      </div>
     </div>
-    <div class="nav-butt"><img src="menu.png" class="nav-open" id="openNav" onclick="navOpen()"></div>
-    <div class="contacts-container" id="contactCon" >
-        <div class="close-container"><img src="close.png" class="close" id="closeNav" onclick="contactClose()"></div>
-        <div class="contact-about">
-            <br>
-            <p class="profile-title">Profile</p>
-            <br>
-            <img src="profile-icon.jpg" class="profile-picture">
-            <br>
-            <p class="contact-name">Kris Constantine F. Magallon</p>
-            <br>
-            <div class="contact-icon-container">
-                <a href="https://github.com/deadloxsummoner" target="_blank"><img src="github-icon.png" class="contact-icon"></a>
-                <a href="https://www.instagram.com/phisbol/" target="_blank"><img src="instagram-icon.png" class="contact-icon"></a>
-                <a href="https://www.facebook.com/magallonconstantine/" target="_blank"><img src="facebook-icon.png" class="contact-icon"></a>
-            </div>
-            <div class="status-log">
-                <div class="status-cell">
-                    <img src="graduate-icon.png" class="status-image">
-                    Polytechnic University Of the Philippines, Sta. Mesa
-                </div>
-                <div class="status-cell">
-                    <img src="home-icon.png" class="status-image">
-                    Taguig City, Metro Manila, Philippines
-                </div>
-                <div class="status-cell">
-                    <img src="mail.png" class="status-image">
-                    magallon.constantine@gmail.com
-                </div>
-            </div>
+    <div class="nav-butt">
+      <img src="menu.png" class="nav-open" id="openNav" onclick="navOpen()" />
+    </div>
+    <div class="contacts-container" id="contactCon">
+      <div class="close-container">
+        <img
+          src="close.png"
+          class="close"
+          id="closeNav"
+          onclick="contactClose()"
+        />
+      </div>
+      <div class="contact-about">
+        <br />
+        <p class="profile-title">Profile</p>
+        <br />
+        <img src="profile-icon.jpg" class="profile-picture" />
+        <br />
+        <p class="contact-name">Kris Constantine F. Magallon</p>
+        <br />
+        <div class="contact-icon-container">
+          <a href="https://github.com/deadloxsummoner" target="_blank"
+            ><img src="github-icon.png" class="contact-icon"
+          /></a>
+          <a href="https://www.instagram.com/phisbol/" target="_blank"
+            ><img src="instagram-icon.png" class="contact-icon"
+          /></a>
+          <a
+            href="https://www.facebook.com/magallonconstantine/"
+            target="_blank"
+            ><img src="facebook-icon.png" class="contact-icon"
+          /></a>
         </div>
+        <div class="status-log">
+          <div class="status-cell">
+            <img src="graduate-icon.png" class="status-image" />
+            Polytechnic University Of the Philippines, Sta. Mesa
+          </div>
+          <div class="status-cell">
+            <img src="home-icon.png" class="status-image" />
+            Taguig City, Metro Manila, Philippines
+          </div>
+          <div class="status-cell">
+            <img src="mail.png" class="status-image" />
+            magallon.constantine@gmail.com
+          </div>
+        </div>
+      </div>
+      <div class="more-container-close" id="moreContainer">
+        d
+      </div>
+      <div class="more-caret-close" id="contactMore" onclick="moreContact()">
+        <p>More</p>
+      </div>
     </div>
     <section id="home">
-        <div class="hero-container">
-            <div>
-                <nav>Hello, I'm Stan!_</nav>
-                <p>I’m a</p>
-                <p>Front-end</p>
-                <p> Web Designer</p>
-                <p>&</p>
-                <p>Developer</p>
-            </div>
-            <div class="hero-image-container">
-                <img src="Shape-11.png">
-            </div>
+      <div class="hero-container">
+        <div>
+          <nav>Hello, I'm Stan!_</nav>
+          <p>I’m a</p>
+          <p>Full-stack</p>
+          <p>Web Designer</p>
+          <p>&</p>
+          <p>Developer</p>
         </div>
+        <div class="hero-image-container">
+          <img src="Shape-11.png" />
+        </div>
+      </div>
     </section>
     <section id="about">
-        <br>
-        <div class="section-header">ABOUT /</div>
-        <div class="about-title">
-            <p id="title">Full-stack web developer</p>
-            <p>Graphic Designer</p>
-            <p>Programmer</p>
-            <p>College</p>
-            <p>.</p>
-        </div>
-        <div class="about-foot">
-            <img src="Shape-13.png" id="circle">
-        </div>
+      <br />
+      <div class="section-header">ABOUT /</div>
+      <div class="about-title">
+        <p id="title">Full-stack web developer</p>
+        <p>Graphic Designer</p>
+        <p>Programmer</p>
+        <p>College</p>
+        <p>.</p>
+      </div>
+      <div class="about-foot">
+        <img src="Shape-13.png" id="circle" />
+      </div>
     </section>
     <section id="works">
-        <div class="section-header">WORKS /</div>
-        <div class="works-container">
-            <div class="works" >
-                <div class="works-title" onclick="workOneOpen()">
-                    <p>AIMS</p>
-                    <p>web app</p>
-                    <p>01</p>
-                </div>
-                <div class="under-line"></div>
-                <div class="workClose" id="workOne">
-                    <div class="image-container"><img src="decoy.jpg" class="work-image"></div>
-                    <div> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor eum reiciendis nostrum neque maiores natus voluptas laudantium dolorem inventore magnam repudiandae sunt ducimus obcaecati sint autem, hic perferendis omnis soluta? Ipsa ullam, veniam officia rem velit eligendi voluptates aperiam, nisi nihil suscipit explicabo quos non voluptatem, minima numquam. Consectetur inventore ducimus ratione non impedit. Minima numquam quas recusandae perferendis velit?</div>
-                </div>
+      <div class="section-header">WORKS /</div>
+      <div class="works-container">
+        <div class="works">
+          <div class="works-title" onclick="workOneOpen()">
+            <p>AIMS</p>
+            <p>web app</p>
+            <p>01</p>
+          </div>
+          <div class="under-line"></div>
+          <div class="workClose" id="workOne">
+            <div class="image-container">
+              <img src="CAA.PNG" class="work-image" />
             </div>
-            <div class="works">
-                <div class="works-title" onclick="workTwoOpen()">
-                    <p>CORVETTE</p>
-                    <p>web app</p>
-                    <p>02</p>
-                </div>
-                <div class="under-line"></div>
-                <div class="workClose" id="workTwo">
-                    <div class="image-container"><img src="decoy.jpg" class="work-image"></div>
-                    <div> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor eum reiciendis nostrum neque maiores natus voluptas laudantium dolorem inventore magnam repudiandae sunt ducimus obcaecati sint autem, hic perferendis omnis soluta? Ipsa ullam, veniam officia rem velit eligendi voluptates aperiam, nisi nihil suscipit explicabo quos non voluptatem, minima numquam. Consectetur inventore ducimus ratione non impedit. Minima numquam quas recusandae perferendis velit?</div>
-                </div>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+              eum reiciendis nostrum neque maiores natus voluptas laudantium
+              dolorem inventore magnam repudiandae sunt ducimus obcaecati sint
+              autem, hic perferendis omnis soluta? Ipsa ullam, veniam officia
+              rem velit eligendi voluptates aperiam, nisi nihil suscipit
+              explicabo quos non voluptatem, minima numquam. Consectetur
+              inventore ducimus ratione non impedit. Minima numquam quas
+              recusandae perferendis velit?
             </div>
-            <div class="works">
-                <div class="works-title" onclick="workThreeOpen()">
-                    <p>VULCANIZING</p>
-                    <p>web app</p>
-                    <p>03</p>
-                </div>
-                <div class="under-line"></div>
-                <div class="workClose" id="workThree">
-                    <div class="image-container"><img src="decoy.jpg" class="work-image"></div>
-                    <div> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor eum reiciendis nostrum neque maiores natus voluptas laudantium dolorem inventore magnam repudiandae sunt ducimus obcaecati sint autem, hic perferendis omnis soluta? Ipsa ullam, veniam officia rem velit eligendi voluptates aperiam, nisi nihil suscipit explicabo quos non voluptatem, minima numquam. Consectetur inventore ducimus ratione non impedit. Minima numquam quas recusandae perferendis velit?</div>
-                </div>
-            </div>
+          </div>
         </div>
-        <script src="app.js"></script>
+        <div class="works">
+          <div class="works-title" onclick="workTwoOpen()">
+            <p>CORVETTE</p>
+            <p>website</p>
+            <p>02</p>
+          </div>
+          <div class="under-line"></div>
+          <div class="workClose" id="workTwo">
+            <div class="image-container">
+              <img src="1-work.PNG" class="work-image" />
+            </div>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+              eum reiciendis nostrum neque maiores natus voluptas laudantium
+              dolorem inventore magnam repudiandae sunt ducimus obcaecati sint
+              autem, hic perferendis omnis soluta? Ipsa ullam, veniam officia
+              rem velit eligendi voluptates aperiam, nisi nihil suscipit
+              explicabo quos non voluptatem, minima numquam. Consectetur
+              inventore ducimus ratione non impedit. Minima numquam quas
+              recusandae perferendis velit?
+            </div>
+          </div>
+        </div>
+        <div class="works">
+          <div class="works-title" onclick="workThreeOpen()">
+            <p>VULCANIZING</p>
+            <p>web app</p>
+            <p>03</p>
+          </div>
+          <div class="under-line"></div>
+          <div class="workClose" id="workThree">
+            <div class="image-container">
+              <img src="Vulcanizeing.png" class="work-image" />
+            </div>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+              eum reiciendis nostrum neque maiores natus voluptas laudantium
+              dolorem inventore magnam repudiandae sunt ducimus obcaecati sint
+              autem, hic perferendis omnis soluta? Ipsa ullam, veniam officia
+              rem velit eligendi voluptates aperiam, nisi nihil suscipit
+              explicabo quos non voluptatem, minima numquam. Consectetur
+              inventore ducimus ratione non impedit. Minima numquam quas
+              recusandae perferendis velit?
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="app.js"></script>
     </section>
     <section id="overview">
-        <div class="section-header">OVERVIEW /</div>
-        <div class="overview-container">
-            <div class="overview-about">I’m a university student with a deep enthusiasm for technology and computer science. I love embracing new challenges and enhancing my skill set as I progress. Whether it’s coding, tackling problems, or investigating the latest tech developments, my desire to learn never wavers. As I advance my skills, I’m eager to bring my expertise into a professional environment, contributing to innovative projects and making a real difference.</div>
-            <div class="technologies-container">
-                <p>TECHNOLOGIES</p>
-                <div class="prog-container">
-                    <div class="prog-1"><img src="css_icon.png"></div>
-                    <div class="prog-2"><img src="html_icon.png"></div>
-                    <div class="prog-3"><img src="js_icon.png"></div>
-                    <div class="prog-4"><img src="react_icon.png"></div>
-                    <div class="prog-5"><img src="sql_icon.png"></div>
-                    <div class="prog-6"><img src="php_icon.png"></div>
-                </div>
-            </div>
+      <div class="section-header">OVERVIEW /</div>
+      <div class="overview-container">
+        <div class="overview-about">
+          I’m a university student with a deep enthusiasm for technology and
+          computer science. I love embracing new challenges and enhancing my
+          skill set as I progress. Whether it’s coding, tackling problems, or
+          investigating the latest tech developments, my desire to learn never
+          wavers. As I advance my skills, I’m eager to bring my expertise into a
+          professional environment, contributing to innovative projects and
+          making a real difference.
         </div>
+        <div class="technologies-container">
+          <p>TECHNOLOGIES</p>
+          <div class="prog-container">
+            <div class="prog-1"><img src="css_icon.png" /></div>
+            <div class="prog-2"><img src="html_icon.png" /></div>
+            <div class="prog-3"><img src="js_icon.png" /></div>
+            <div class="prog-4"><img src="react_icon.png" /></div>
+            <div class="prog-5"><img src="sql_icon.png" /></div>
+            <div class="prog-6"><img src="php_icon.png" /></div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact">
-        <div class="section-header">CONTACT /</div>
-        <div class="contact-head">
-            <div class="word-1">Let's Talk / </div>
-            <div class="word-2">Let's Talk / </div>
-            <div class="word-3">Let's Talk / </div>
-            <div class="word-4">Let's Talk / </div>
-        </div>
-        <div class="contact-head-2">
-            <div class="word-5">Let's Talk /</div>
-            <div class="word-6">Let's Talk /</div>
-            <div class="word-7">Let's Talk /</div>
-            <div class="word-8">Let's Talk /</div>
-        </div>
-        <br><br>
-        <div class="contact-con">
-            <a class="contact" id="contactButton" onclick="openContact()">CONTACT</a>
-        </div>
+      <div class="section-header">CONTACT /</div>
+      <div class="contact-head">
+        <div class="word-1">Let's Talk /</div>
+        <div class="word-2">Let's Talk /</div>
+        <div class="word-3">Let's Talk /</div>
+        <div class="word-4">Let's Talk /</div>
+      </div>
+      <div class="contact-head-2">
+        <div class="word-5">Let's Talk /</div>
+        <div class="word-6">Let's Talk /</div>
+        <div class="word-7">Let's Talk /</div>
+        <div class="word-8">Let's Talk /</div>
+      </div>
+      <br /><br />
+      <div class="contact-con">
+        <a class="contact" id="contactButton" onclick="openContact()"
+          >CONTACT</a
+        >
+      </div>
     </section>
     <section id="footer">
-        <div class="footer-container">
-            <p>STAN MAGALLON</p>
-            <p>2024</p> 
-            <p></p>
-        </div>
-        <div class="footer-container">
-            <a>GITHUB</a>
-            <a>INSTAGRAM</a>
-            <a>FACEBOOK</a>
-        </div>
+      <div class="footer-container">
+        <p>STAN MAGALLON</p>
+        <p>2024</p>
+        <p></p>
+      </div>
+      <div class="footer-container">
+        <a href="https://github.com/deadloxsummoner">GITHUB</a>
+        <a href="https://www.instagram.com/phisbol/">INSTAGRAM</a>
+        <a href="https://www.facebook.com/magallonconstantine/">FACEBOOK</a>
+      </div>
     </section>
-</body>
+  </body>
 </html>
