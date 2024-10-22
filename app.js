@@ -24,6 +24,8 @@ function contactClose() {
 function openContact() {
     contact.style.right ="0";
     openNav.style.opacity = "0";
+
+    
 }
 
 function workOneOpen(){

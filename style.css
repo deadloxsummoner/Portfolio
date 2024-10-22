@@ -722,6 +722,35 @@ nav {
     transition: .2s;
 }
 
+.more-container {
+    width: 100%;
+}
+
+.more-head {
+    margin-top: 5%;
+    font-size: 2vw;
+}
+
+.more-content {
+    margin-top: 3%;
+}
+
+.more-content p {
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+.more-content p + p {
+    font-size: 1.1vw;
+    font-weight: 300;
+}
+
+.more-content img {
+    width: 20vw;
+    margin-left: 2vw;
+    aspect-ratio: 16/9;
+    margin-top: 10%;
+}
 
 #contactMore {
     cursor: pointer;
