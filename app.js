@@ -1,51 +1,66 @@
-let openNav = document.getElementById("openNav");
-let claseNav = document.getElementById("closeNav");
-let navBar = document.getElementById("navBar");
-let workOne = document.getElementById("workOne");
-let workTwo = document.getElementById("workTwo");
-let workThree = document.getElementById("workThree");
-let contact = document.getElementById("contactCon");
-let contactMore = document.getElementById("contactMore");
-let moreContainer = document.getElementById("moreContainer");
+addEventListener("scroll",function(){
+    var navBar = document.getElementById("navBar");
+    var navBoundary = document.getElementById("navBoundary");
+    var navBody = document.getElementById("navBody");
 
-function navOpen(){
-    navBar.style.left = "0";
+
+    if(navBoundary.getBoundingClientRect().top < navBar.getBoundingClientRect().bottom ){
+        navBody.style.backdropFilter = "blur(25px)";
+        navBody.style.backgroundColor = "#0f0e0f50";
+        navBody.style.border = "1px solid #cccccc20";
+    } else {
+        navBody.style.backdropFilter = "";
+        navBody.style.backgroundColor = "#0f0e0f";
+        navBody.style.border = "none";
+        navBody.style.transition = "0.5s";
+    }
+});
+
+var heroWave = document.getElementById("heroWave");
+
+heroWave.onmouseenter = function(){
+    heroWave.innerHTML = "🇵🇭";
+    heroWave.transition = ".5s";
 }
 
-function navClose(){
-    navBar.style.left ="100%";
+heroWave.onmouseleave = function(){
+    heroWave.innerHTML = "👋";
+    heroWave.transition = ".5s"; 
 }
 
-function contactClose() {
-    contact.style.right = "100%";
-    openNav.style.opacity = "1";
+let aboutSection = document.getElementById("about-section");
+let aboutButton = document.getElementById("aboutButt");
+let xAbout = document.getElementById("closeAbout");
+
+var openAbout = function() {
+    aboutSection.style.marginTop = 0;   
+    aboutSection.style.opacity = 1; 
 }
 
-function openContact() {
-    contact.style.right ="0";
-    openNav.style.opacity = "0";
-
-    
+var closeAbout = function(){
+    aboutSection.style.marginTop = "100vh";
+    aboutSection.style.opacity = 0;
 }
 
-function workOneOpen(){
-    workOne.classList.toggle("workClose");
-    workOne.classList.toggle("work-info-container");
+
+
+
+
+function openView(element){
+   
+   const videoSelect = element.querySelector('.video-display');
+    if(window.innerWidth < 720){
+        element.classList.toggle("mobileViewVideo");
+        videoSelect.classList.toggle("mobileViewVideo")
+        
+    }else {
+        element.classList.remove("mobileViewVideo");
+        videoSelect.classList.remove("mobileViewVideo")
+        element.classList.toggle("openView");
+    }
 }
 
-function workTwoOpen(){
-    workTwo.classList.toggle("workClose");
-    workTwo.classList.toggle("work-info-container");
-}
-
-function workThreeOpen(){
-    workThree.classList.toggle("workClose");
-    workThree.classList.toggle("work-info-container");
-}
-
-function moreContact(){
-    contactMore.classList.toggle("more-caret-close");
-    contactMore.classList.toggle("more-caret-open");
-    moreContainer.classList.toggle("more-container-close");
-    moreContainer.classList.toggle("more-container-open");
+function toggleAbout(){
+    let aboutContainer = document.getElementById("abtCon");
+    aboutContainer.classList.toggle("show-about");
 }
